@@ -16,7 +16,7 @@ function main(upperNum1, upperNum2, upperNum3) {
 		for (let j = 2; j <= upperNum2; j++) {
 			if (j == 2 || j == 3 || j == 5 || j == 7) {
 				// 3rd loop (for loop (third digit)) boundries (2- upperNum3) step +2
-				for (let k = 2; k < upperNum3; k += 2) {
+				for (let k = 2; k <= upperNum3; k += 2) {
 					//  console.log( {d1} {d2}{d3})
 					console.log(`${i} ${j} ${k}`); //console.log( i +" " + j+" " + k);
 				}

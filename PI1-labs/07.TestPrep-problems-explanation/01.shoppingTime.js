@@ -21,17 +21,17 @@ OUTPUT
 •   The remaining time for relaxation
  */
 
- function main(restTime, ppHardWare, ppSoftware, frapPrice) {
+function main(restTime, ppHardWare, ppSoftware, frapPrice) {
 	// need a final time variable
 	// or  use the testTime Variable to track how much time we have left
-    let finalTime = restTime; 
-    
+	let finalTime = restTime;
+
 	//subtract time spent with hardware (6 mins) - restTime -= 6
 	finalTime -= 6;
 	//subtract time spent with software (4 mins) - restTime -= 4
 	finalTime -= 4;
-    //subtract time for frappe (5 mins)          - restTime -= 5
-    finalTime -= 5;
+	//subtract time for frappe (5 mins)          - restTime -= 5
+	finalTime -= 5;
 	//give us the remaining time for his break
 
 	// declair variables for the final price of hardware
@@ -42,8 +42,8 @@ OUTPUT
 	let finalSoftPrice = 0;
 	// calulate the final price for harware
 	finalSoftPrice = 2 * ppSoftware;
-    //calulate total - let total = finalHardPrice + finalSoftPrice + frapPrice;
-    let total = finalSoftPrice + finalHardPrice + frapPrice;
+	//calulate total - let total = finalHardPrice + finalSoftPrice + frapPrice;
+	let total = finalSoftPrice + finalHardPrice + frapPrice;
 	//print the final price .toFixed(2) - console.log(total.toFixed(2))
 	console.log(total.toFixed(2));
 	// print the remaining time for the break - console.log(restTime)
