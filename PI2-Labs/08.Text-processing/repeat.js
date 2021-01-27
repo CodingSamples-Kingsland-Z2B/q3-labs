@@ -1,0 +1,1 @@
+console.log('*'.repeat('ABC'.length));
