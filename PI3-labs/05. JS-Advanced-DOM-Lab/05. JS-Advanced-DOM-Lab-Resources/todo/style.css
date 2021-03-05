@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+#navbar {
+    background: linear-gradient(45deg, #9014e9, #b302b3);
+    padding: 1rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbar .container {
+    margin: auto;
+    max-width: 900px;
+}
+
+#navbar h1 {
+    color: white;
+}
+
+.btn {
+    border: 0;
+    outline: 0;
+    padding: 0.7rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.btn-primary {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.btn-danger {
+    background-color: red;
+    color: white;
+}
+
+#modal {
+    top: -100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dropDown {
+    animation: dropdown 1s ease-in forwards;
+}
+
+.goup {
+    animation: upward 1s ease;
+}
+
+#add-form {
+    padding: 2rem;
+    display: block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
+}
+
+#add-form button {
+    margin-top: 1rem;
+}
+
+.action {
+    display: flex;
+    justify-content: space-between;
+}
+
+#add-form input {
+    height: 35px;
+    width: 300px;
+    outline: none;
+    font-size: 1rem;
+    padding: 0.25rem;
+}
+
+@keyframes dropdown {
+    0% {
+        top: -100%;
+        opacity: 0;
+    }
+    100% {
+        top: 50%;
+        opacity: 1;
+    }
+}
+
+@keyframes upward {
+    0% {
+        top: 50%;
+        opacity: 1;
+    }
+    100% {
+        top: -100%;
+        opacity: 0;
+    }
+}
