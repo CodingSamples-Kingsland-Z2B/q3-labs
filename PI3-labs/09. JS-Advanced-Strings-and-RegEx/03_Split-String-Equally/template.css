@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+#text, #text::placeholder {
+    background: black;
+    font-family: 'Inconsolata', monospace;
+    background: black;
+    font-family: 'Inconsolata', monospace;
+    border: none;
+    border-radius: 2px;
+    height: 250px;
+    width: 100%;
+    outline: none;
+    color: #BADA55;
+}
+
+form {
+    width: 40%;
+    margin: 4% auto;
+}
+
+form input[type="text"] {
+    border-radius: 2px;
+    border: 1px solid lightgrey;
+    padding: 5px;
+    margin: 10px 5px;
+}
+
+form input[type="button"] {
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+    padding: 11px 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+form input[type="button"]:hover {
+    text-decoration: underline;
+}
+
+footer {
+    width: 40%;
+    margin: 4% auto;
+    font-size: 35px;
+}

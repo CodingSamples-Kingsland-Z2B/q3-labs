@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="template.css">
+
+    <title>String Split Equally</title>
+</head>
+
+<body>
+    <form>
+        <div>
+            <h2>
+                Split the string equally by the number you have received, separated by space
+            </h2>
+            <p>
+                <i>However, if the string cannot be split into equal parts, fill the last sequence until its length is
+                    equal to the second parameter, starting from the beginning of the string</i>
+            </p>
+            <textarea id="text" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="number">Number: </label>
+            <input type="text" id="number">
+        </div>
+        <input type="button" onclick="solve()" value="Show result">
+    </form>
+    <footer>Result: <span id="result"></span></div>
+</body>
+<script src="./solution2.js"></script>
+
+</html>
