@@ -1,0 +1,424 @@
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+}
+
+.let-it-snow {
+    width: 100%;
+    height: 100%;
+    float: left;
+    background: #001e28;
+}
+
+i {
+    color: white;
+}
+
+nav {
+    background: #fff;
+    padding: 0.2em 5em;
+}
+
+nav div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+nav div:nth-child(1) {
+    width: 35%;
+}
+
+nav div:nth-child(1) img {
+    width: 38%;
+    margin-top: 6px;
+}
+
+nav div:nth-child(1) i {
+    font-size: 30px;
+    color: white;
+    position: relative;
+    top: -14px;
+    left: -5px;
+}
+
+nav div:nth-child(2) {
+    width: 64%;
+}
+
+nav div:nth-child(2) img {
+    width: 3%;
+    border-radius: 50%;
+    margin-top: 0px;
+    margin-left: 9px;
+    position: relative;
+    top: 6px;
+}
+
+nav div:nth-child(2) i {
+    color: white;
+}
+
+nav div:nth-child(2) i:hover {
+    color: white;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 0.4em;
+}
+
+nav ul li a {
+    color: #1a164c;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "LatoBlack", "Arial", "Helvetica", sans-serif;
+}
+
+nav ul li a:hover {
+    color: #dfdfdf;
+    cursor: pointer;
+}
+
+nav button {
+    background-color: #1a164c;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    padding: 4px 13px;
+    font-weight: bold;
+    font-size: 1em;
+    outline: none;
+    position: relative;
+    top: -19px;
+    left: 17px;
+}
+
+nav button:hover {
+    cursor: pointer;
+}
+
+.education {
+    background: #d3d3d3;
+    padding: 2em;
+    text-align: center;
+}
+
+.education article {
+    display: inline-block;
+    width: 27%;
+    margin: 15px;
+}
+
+h3 {
+    margin: 0;
+}
+
+.box-head {
+    background: #eceaf0;
+    color: #2d2e2e;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.box-body {
+    background-color: #fff;
+    height: 269px;
+}
+
+.box-body ul {
+    margin: 0;
+}
+
+.box-body li {
+    word-wrap: break-word;
+    padding: 20px 0 18px 0;
+    border-bottom: 1px solid #ccc;
+    margin: 0 20px 0 20px;
+    text-align: left;
+    list-style: none;
+    font-weight: bold;
+    color: #2d2e2e;
+}
+
+.box-body li i {
+    color: #1a164c;
+    font-size: 21px;
+    text-align: right;
+    float: right;
+    padding-right: 29px;
+}
+
+.box-body li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.box-footer {
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #1a164c;
+    color: white;
+    min-height: 54px;
+    vertical-align: middle;
+    font-size: 21px;
+    padding-top: 18px;
+}
+
+.slider {
+    background: #ffff;
+}
+
+.slider-container {
+    width: 89%;
+    margin: 0 auto;
+    padding: 1em 0;
+}
+
+.slider h2 {
+    text-align: center;
+    padding: 0 0 25px 0;
+    color: #2d2e2e;
+}
+
+.slick-slide img {
+    width: 311px;
+    margin-left: 13px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+.info {
+    border-bottom-left-radius: 12px;
+    background: #2d2e2e;
+    font-size: 17px;
+    width: 283px;
+    margin-left: 13px;
+    border-bottom-right-radius: 12px;
+    color: white;
+    padding: 14px;
+    box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.5)
+}
+
+
+/*lecture-meeting*/
+
+.lecture-meeting {
+    background: #d3d3d3;
+    padding-bottom: 4em;
+}
+
+.lecture-meeting h2 {
+    text-align: center;
+    padding: 30px 0 5px 0;
+}
+
+.meeting-main {
+    background: white;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.meeting-header p:nth-child(1) {
+    font-size: 1.5em;
+    font-weight: bold;
+    border-right: 2px solid black;
+    width: 300px;
+    text-align: right;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+.meeting-header p:nth-child(2) {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ccc;
+    width: 300px;
+    text-align: left;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+.lecture-meeting i {
+    display: block;
+    color: #2d2e2e;
+    position: absolute;
+    font-size: 24px;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-left: 5px;
+}
+
+.lecture-meeting form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em 0 2em 0;
+}
+
+.lecture-meeting form p {
+    position: relative;
+    width: 55%;
+    box-sizing: border-box;
+    padding-bottom: 0.5em;
+}
+
+.lecture-meeting input,
+.lecture-meeting select,
+.lecture-meeting option {
+    display: block;
+    border: none;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 16px;
+    border-bottom: 0.08em solid #2d2e2e;
+    padding-left: 40px;
+    font-size: inherit;
+    outline: none;
+    color: #2d2e2e;
+    box-sizing: border-box;
+    padding-bottom: 0.8em;
+    border-radius: 0;
+}
+
+.lecture-meeting input::placeholder {
+    color: #2d2e2e;
+}
+
+.lecture-meeting button {
+    background-color: #1a164c;
+    border: 2px solid transparent;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 20px;
+    transition: all .2s ease;
+    padding: 10px 25px;
+    outline: none;
+    margin-top: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+/*site-footer*/
+
+.site-footer {
+    background: #fff;
+    color: #1a164c;
+}
+
+.site-footer a {
+    text-decoration: none;
+    color: #1a164c;
+    font-size: 17px;
+}
+
+.site-footer .wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.5rem 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.site-footer ul {
+    padding: 0;
+    margin: 0;
+}
+
+.site-footer li {
+    display: block;
+    list-style: none outside;
+}
+
+.site-footer .about {
+    flex: 0 0 30%;
+}
+
+.site-footer .ul {
+    display: flex;
+}
+
+.site-footer ul {
+    padding-right: 2em;
+}
+
+.about header>p {
+    font-size: 14px;
+    padding-bottom: 1.5rem;
+}
+
+.about hr {
+    width: 100%;
+    height: 1px;
+}
+
+.about>p {
+    padding-bottom: 1.2rem;
+}
+
+.site-footer .initiatives {
+    flex: 0 0 20%;
+}
+
+.site-footer .partners {
+    flex: 0 0 30%;
+}
+
+.site-footer h3 {
+    font-size: 18px;
+    color: #1a164c;
+    padding-bottom: 1em;
+}
+
+.site-footer .initiatives ul {}
+
+.site-footer .initiatives li {
+    display: block;
+    list-style: none outside;
+}
+
+.site-footer .initiatives li a {
+    text-decoration: none;
+    color: #1a164c;
+}
+
+.site-footer .partners li {
+    display: block;
+    list-style: none outside;
+    flex: 0 0 50%;
+    line-height: 1.2;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.site-footer .partners li i {
+    display: inline-block;
+    position: absolute;
+    top: 0.1rem;
+    left: 0;
+    width: 1.7rem;
+    text-align: center;
+}
+
+.notifyjs-bootstrap-success {
+    text-align: center !important;
+    background-image: none !important;
+}
+
+.notifyjs-arrow {
+    display: none !important;
+}
