@@ -13,7 +13,7 @@ function main() {
             }
         },
 
-        figher(name) {
+        fighter(name) {
             return {
                 name: name,
                 stamina: 100,
