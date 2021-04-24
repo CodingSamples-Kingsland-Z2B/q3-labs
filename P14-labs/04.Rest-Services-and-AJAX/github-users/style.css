@@ -1,0 +1,4 @@
+.nav-bg {
+    background: linear-gradient(45deg, purple, indigo);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
+}
