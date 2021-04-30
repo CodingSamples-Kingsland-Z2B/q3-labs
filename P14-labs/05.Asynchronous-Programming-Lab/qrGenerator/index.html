@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>QR Generator</title>
+</head>
+
+<body>
+
+    <nav class="indigo">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo" id="brand">QR Generator</a>
+        </div>
+    </nav>
+
+
+    <section class="container" id="input-form">
+        <div class="row">
+            <div class="col s12 m6 offset-m3">
+                <div class="card z-depth-2">
+                    <div class="card-content">
+                        <div class="row">
+                            <form class="col s12" id="form">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="input-text" type="text">
+                                        <label for="input-text">Input Text</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <input id="width" type="text">
+                                        <label for="width">Width</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input id="height" type="text">
+                                        <label for="height">Height</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <select id="bg-color"></select>
+                                        <label for="bg-color">Background Color</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <select id="text-color"></select>
+                                        <label for="text-color">Front Color</label>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <select id="format-input"></select>
+                                        <label for="format-input">Format</label>
+                                    </div>
+                                </div>
+
+                                <div class="text-center">
+                                    <button class="waves-effect waves-light btn" type="submit">Generate </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Output section  -->
+
+
+    <section id="output" class="container">
+        <div class="row">
+            <div class="col s12 m6 offset-m3">
+                <div class="card z-depth-2">
+                    <div class="card-content text-center">
+                        <img src="" alt="" id="image"> <br>
+                        <button class="waves-effect waves-light btn" onclick="DOMUI()"> Back </button>
+                        <a href="#" class="waves-effect waves-light btn" onclick="downloadImage()" id="download-btn"> Download </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
