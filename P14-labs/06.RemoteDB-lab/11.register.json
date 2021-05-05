@@ -1,0 +1,14 @@
+{
+    "username": "newUser",
+    "password": "password",
+    "_kmd": {
+        "lmt": "2021-05-05T01:43:54.781Z",
+        "ect": "2021-05-05T01:43:54.781Z",
+        "llt": "2021-05-05T01:43:54.806Z",
+        "authtoken": "95c5623c-f79e-4402-af25-d0072e4f89a7.UmzbB9jRS1UDS375ilmLUTrw4GTqqes1GaqU6he83eg="
+    },
+    "_id": "6091f85a2e10100012b4d4d7",
+    "_acl": {
+        "creator": "6091f85a2e10100012b4d4d7"
+    }
+}
