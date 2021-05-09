@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Contacts</title>
+</head>
+
+<body>
+
+    <div id="contacts"> </div>
+
+
+    <!-- Start Handlebare template dynamic data {{}} -->
+    <script id="cards" type="text/x-handlebar-template">
+        {{> appName}} {{#each contacts}}
+        <div class="contact card">
+            <div>
+                <i class="far fa-user-circle gravatar"></i>
+            </div>
+            <div class="info">
+                <h2>Name: {{name}}</h2>
+                <button class="detailsBtn" onclick="showDetails({{id}})">Details</button>
+                <div class="details" id={{id}}>
+                    <p>Phone number: {{phoneNumber}}</p>
+                    <p>Email: {{email}}</p>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+
+
+    <script id="header" type="text/x-handlebar-template">
+        <h1>{{title}}</h1>
+    </script>
+
+
+
+    <script src="./node_modules/handlebars/dist/handlebars.min.js"></script>
+    <script src="./data/contacts.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
