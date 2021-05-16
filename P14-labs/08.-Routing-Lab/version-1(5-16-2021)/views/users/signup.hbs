@@ -1,0 +1,31 @@
+{{>navbar}}
+
+<div class="row">
+  <div class="col-md-3 m-auto card card-body shadow">
+    <form action='/user/signup' method="POST" novalidate>
+      <h1 class="text-center">Signup</h1>
+      <div class="form-group">
+        <input type="email" name="email" value="{{formData.email}}"
+          class="form-control {{#if emailInvalid}}is-invalid{{/if}} {{#if emailValid}} is-valid{{/if}}"
+          placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <input type="password" name="password" value="{{formData.password}}"
+          class="form-control {{#if passwordInvalid}}is-invalid{{/if}} {{#if passwordValid}} is-valid{{/if}}"
+          placeholder="Password">
+      </div>
+      <div class="form-group">
+        <input type="password" name="password2" value="{{formData.password2}}"
+          class="form-control {{#if password2Invalid}}is-invalid{{/if}} {{#if password2Valid}} is-valid{{/if}}"
+          placeholder="Confirm Password">
+      </div>
+      <div class="text-center">
+        <p>Have an account ? <a href="/user/login">Login</a></p>
+        <button type="submit" class="btn btn-primary">Signup</button>
+      </div>
+    </form>
+  </div>
+
+</div>
+
+{{>notifications}}

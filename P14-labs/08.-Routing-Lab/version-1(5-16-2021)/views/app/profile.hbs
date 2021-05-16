@@ -1,0 +1,36 @@
+{{>navbar}}
+<div class="container">
+    <div class="row space-top">
+        <div class="col-md-12">
+            <h1>Profile Page</h1>
+            <p>Listing your furniture.</p>
+        </div>
+    </div>
+      <div class="row space-top">
+
+    {{#each myFurnitures}}
+    <div class="col-md-4">
+      <div class="card text-white bg-primary">
+        <div class="card-body">
+          <blockquote class="card-blockquote">
+            <img class="img-fluid" src="{{imageUrl}}" />
+            <p>{{desc}}</p>
+            <footer>Made By {{maker}}
+              <cite title="{{year}}">{{year}}</cite>
+            </footer>
+            <div class="pull-right">
+              <a href='/details/{{id}}' class="btn btn-info">Details</a>
+            </div>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+    {{else}}
+    <div class="col-md-6 m-auto">
+      <h2 class="mt-5">No Furniture Avaliable</h2>
+      <p>There are no furniture in our catlog, if you'd like to sell furniture on the site, please login and add it </p>
+    </div>
+    {{/each}}
+  </div>
+
+</div>
