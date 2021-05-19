@@ -1,0 +1,33 @@
+{{>navbar}}
+
+{{#if isLoading}}
+<div class="text-center mt-5">
+  <img src="../../img/loading.gif" alt="">
+</div>
+{{else}}
+
+<div class="row">
+  <div class="col-md-3 m-auto card card-body shadow">
+    <form action='/user/login' method="POST" novalidate>
+      <h1 class="text-center">Login</h1>
+      <div class="form-group">
+        <input type="email" name="email" value="{{email.input}}"
+          class="form-control {{#if email.invalid}}is-invalid{{/if}} {{#if email.valid}} is-valid{{/if}}"
+          placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <input type="password" name="password" value="{{password.input}}"
+          class="form-control {{#if password.invalid}}is-invalid{{/if}} {{#if password.valid}} is-valid{{/if}}"
+          placeholder="Password">
+      </div>
+      <div class="text-center">
+        <p>Don't have an account ? <a href="/user/signup">Signup</a></p>
+        <button type="submit" class="btn btn-primary">Login</button>
+      </div>
+    </form>
+  </div>
+
+</div>
+{{/if}}
+
+{{>notifications}}

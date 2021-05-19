@@ -1,0 +1,97 @@
+{{>navbar}}
+<div class="container">
+
+  <div class="card card-body shadow text-center">
+    <div class="row space-top">
+      <div class="col-md-12">
+        <h1>Create New Furniture</h1>
+        <p>Please fill all fields.</p>
+      </div>
+    </div>
+    <form action="/furniture/create" method="POST">
+      <div class="row space-top mb-3">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label class="form-control-label" for="new-make">Make</label>
+            <input class="form-control {{#if maker.invalid}} is-invalid {{/if}} {{#if maker.valid}} is-valid{{/if}}"
+              value="{{maker.input}}" name="maker" id="new-make" type="text">
+            {{#if maker.invalid}}
+            <div class="invalid-feedback"> {{maker.msg}}</div>
+            {{/if}}
+          </div>
+
+
+          <div class="form-group">
+            <label class="form-control-label" for="new-model">Model</label>
+            <input class="form-control {{#if model.invalid}} is-invalid {{/if}} {{#if model.valid}} is-valid{{/if}}"
+              value="{{model.input}}" name="model" id="new-model" type="text">
+            {{#if model.invalid}}
+            <div class="invalid-feedback"> {{model.msg}}</div>
+            {{/if}}
+          </div>
+
+
+          <div class="form-group">
+            <label class="form-control-label" for="new-year">Year</label>
+            <input class="form-control {{#if year.invalid}} is-invalid {{/if}} {{#if year.valid}} is-valid{{/if}}"
+              value="{{year.input}}" name="year" id="new-year" type="number">
+            {{#if year.invalid}}
+            <div class="invalid-feedback"> {{year.msg}}</div>
+            {{/if}}
+          </div>
+
+
+          <div class="form-group">
+            <label class="form-control-label" for="new-description">Description</label>
+            <input class="form-control {{#if desc.invalid}} is-invalid {{/if}} {{#if desc.valid}} is-valid{{/if}}"
+              value="{{desc.input}}" name="desc" id="new-description" type="text">
+            {{#if desc.invalid}}
+            <div class="invalid-feedback"> {{desc.msg}}</div>
+            {{/if}}
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="form-group">
+            <label class="form-control-label" for="new-price">Price</label>
+            <input class="form-control {{#if price.invalid}} is-invalid {{/if}} {{#if price.valid}} is-valid{{/if}}"
+              value="{{price.input}}" name="price" id="new-price" type="text">
+            {{#if price.invalid}}
+            <div class="invalid-feedback"> {{price.msg}}</div>
+            {{/if}}
+          </div>
+
+          <div class="form-group">
+            <label class="form-control-label" for="new-image">Image Url</label>
+            <input
+              class="form-control {{#if imageUrl.invalid}} is-invalid {{/if}} {{#if imageUrl.valid}} is-valid{{/if}}"
+              value="{{imageUrl.input}}" name="imageUrl" id="new-image" type="text">
+            {{#if imageUrl.invalid}}
+            <div class="invalid-feedback"> {{imageUrl.msg}}</div>
+            {{/if}}
+          </div>
+
+          <div class="form-group">
+            <label class="form-control-label" for="new-material">Material (optional)</label>
+            <input
+              class="form-control {{#if material.invalid}} is-invalid {{/if}} {{#if material.valid}} is-valid{{/if}}"
+              value="{{material.input}}" name="material" id="new-materoal" type="text">
+            {{#if material.invalid}}
+            <div class="invalid-feedback"> {{material.msg}}</div>
+            {{/if}}
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="col-md-8 m-auto">
+        <input type="submit" class="btn btn-primary btn-block" value="Create" />
+      </div>
+    </form>
+  </div>
+</div>
+
+
+{{>notifications}}
