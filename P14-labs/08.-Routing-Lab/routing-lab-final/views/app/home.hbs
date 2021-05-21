@@ -1,0 +1,44 @@
+{{>navbar}}
+
+{{#if isLoading}}
+<div class="text-center mt-5">
+  <img src="../../img/loading.gif" alt="">
+</div>
+{{else}}
+
+<div class="container">
+  <div class="row space-top text-center mb-3">
+    <div class="col-md-12">
+      <h1>Welcome to Furniture System</h1>
+      <p>Select furniture from the catalog to view details.</p>
+    </div>
+  </div>
+  <div class="row space-top">
+
+    {{#each allFurnitures}}
+    <div class="col-md-4">
+      <div class="card text-white bg-light text-dark">
+        <div class="card-body card shadow">
+          <blockquote class="card-blockquote">
+            <img class="img-fluid mb-3" src="{{imageUrl}}" />
+            <p class="text-center">{{desc}}</p>
+            <P class="text-center mb-3 lead">Made By : <span class="font-weight-bold text-warning">{{maker}}</span></P>
+            <P class="text-center mb-3 lead">Model Year : <span class="font-weight-bold ">{{year}}</span></P>
+            <div class="text-center">
+              <a href='#/furniture/details/{{_id}}' class="btn btn-info">Details</a>
+            </div>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+    {{else}}
+    <div class="col-md-6 m-auto">
+      <h2 class="mt-5">No Furniture Avaliable</h2>
+      <p>There are no furniture in our catlog, if you'd like to sell furniture on the site, please login and add it </p>
+    </div>
+    {{/each}}
+  </div>
+</div>
+
+{{/if}}
+{{>notifications}}
