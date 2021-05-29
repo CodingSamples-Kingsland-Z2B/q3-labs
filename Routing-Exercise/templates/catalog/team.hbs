@@ -1,0 +1,17 @@
+<a class="card" href="#/catalog/{{_id}}">
+  <div class="card-body">
+    <h5 class="card-title">Team Name</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{name}}</h6>
+    <p class="card-text"> 
+     <span class="spanner">Description</span>
+    {{#if comment}}
+            <p>{{comment}}</p>
+    {{else}}
+            <p>No description</p>
+    {{/if}}       
+    </p>
+    
+  </div>
+</a>
+
+

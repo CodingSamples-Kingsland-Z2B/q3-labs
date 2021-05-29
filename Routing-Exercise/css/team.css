@@ -1,0 +1,11 @@
+.title {
+    font-size: 1.5em;
+    display: block;
+    padding: 0.25em;
+    padding-left: 1.5em;
+    font-weight: 600;
+}
+
+.team-box p {
+    margin: 1.5em;
+}
