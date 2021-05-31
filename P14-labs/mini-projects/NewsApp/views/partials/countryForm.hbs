@@ -1,0 +1,15 @@
+<form action="#/country" method="post" class="card card-body shadow mb-5">
+  <select name="country" class="custom-select custom-select-lg mb-3">
+
+
+    {{#each countries}}
+    <option value="{{value}}"> {{name}}</option>
+
+    {{/each}}
+
+  </select>
+
+<div class="text-center">
+  <button class="btn btn-primary"> SELECT</button>
+</div>
+</form>

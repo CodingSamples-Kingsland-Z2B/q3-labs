@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootswatch/dist/sketchy/bootstrap.css">
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.css">
+    <title>Paint It App</title>
+</head>
+
+<body>
+
+
+    <div class="container-fluid">
+
+        <h1 class="text-center display-1 mt-3">
+            <img src="img/logo.png" alt="" height="100" width="100"> Paint <span class="text-success"> It</span>
+        </h1>
+
+
+        <div class="card shadow">
+            <div class="card-header">
+                <input type="color" id="penColor" name="penColor" value="#000000" hidden>
+                <input type="color" id="bgColor" name="penColor" value="#ffffff" hidden>
+
+                <div class="float-left">
+                    Pen Color: <button id="penColorTrigger"> <i class="fa fa-pencil fa-2x"></i></button> Background Color: <button id="bgColorTrigger"> <i class="fa fa-paint-brush fa-2x"></i></button> Eraser: <button id="eraser"> <i class="fa fa-eraser fa-2x"></i></button>
+                    <label for="penWidth">Line thickness</label>
+                    <input type="range" id="penWidth" name="penWidth" min="1" max="100" step="2" value="5" class="form-control-range-inline mx-2">
+                </div>
+                <div class="float-right">
+                    <button id="clear" class="btn btn-success mx-2">Clear </button>
+                    <button id="save" class="btn btn-info mx-2">Save </button>
+                </div>
+
+
+            </div>
+            <div class="card-body m-0 p-0">
+                <canvas id="canvas">
+              </canvas>
+            </div>
+        </div>
+
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>

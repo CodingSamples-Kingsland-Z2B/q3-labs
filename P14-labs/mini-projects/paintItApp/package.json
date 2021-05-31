@@ -1,0 +1,16 @@
+{
+    "name": "paintItApp",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bootswatch": "^4.4.1",
+        "font-awesome": "^4.7.0"
+    }
+}

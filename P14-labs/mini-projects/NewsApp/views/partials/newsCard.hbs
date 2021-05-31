@@ -1,0 +1,18 @@
+<div class="col-md-6 d-flex align-items-stretch">
+<div class="card shadow my-3">
+  <img class="card-img-top img-fluid" src="{{#if urlToImage}}{{urlToImage}}{{else}}../img/no-image.jpg{{/if}}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{title}}</h5>
+    <hr>
+    <h6 class="text-center"> {{#if author}}Author: {{author}} , {{/if}} {{#if source}}Source: {{source.name}} {{/if}}</h6>
+    <hr>
+    <p class="card-text">{{content}}</p>
+
+    <div class="text-center">
+      <a href="{{url}}" class="btn btn-primary">More</a>
+    </div>
+
+  </div>
+</div>
+</div>
+
