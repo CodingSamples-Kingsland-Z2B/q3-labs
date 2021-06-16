@@ -1,0 +1,18 @@
+<h1>Create</h1>
+<div class="form">
+  <form action='/create' method="POST">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name">
+    <label for="name">Description</label>
+    <textarea id="name" name="description"></textarea>
+    <label for="image">ImageUrl</label>
+    <input type="text" id="image" name="imageUrl">
+    <label for="difficulty">Difficulty</label>
+    <select id="difficulty" name="level">
+      {{#each options}}
+      <option value="{{level}}" {{#if selected}} selected {{/if}}>{{desc}}</option>
+      {{/each}}
+    </select>
+    <input type="submit" value="Create">
+  </form>
+</div>
