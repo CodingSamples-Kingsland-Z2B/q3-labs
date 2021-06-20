@@ -1,0 +1,19 @@
+{{#if errorMessage}}
+<div class="msg error">
+  {{errorMessage}}
+</div>
+{{/if}}
+
+{{#if successMessage}}
+<div class="msg success">
+  {{successMessage}}
+</div>
+{{/if}}
+
+<script>
+  document.querySelectorAll('.msg').forEach(msg => {
+    setTimeout(() => {
+      msg.remove()
+    }, 2000)
+  })
+</script>
