@@ -1,0 +1,9 @@
+{
+  "env": {
+    "PORT": 4500,
+    "NODE_ENV": "development",
+    "MONGO_USER": "alfred",
+    "MONGO_PASS": "alfred00",
+    "MONGO_DB": "cubes"
+  }
+}
