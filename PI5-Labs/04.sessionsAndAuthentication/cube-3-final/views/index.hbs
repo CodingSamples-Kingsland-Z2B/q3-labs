@@ -1,0 +1,14 @@
+<h1>Browser</h1>
+{{>search}}
+{{#each cubes}}
+<div class="cube">
+  <img class="cube" src="{{imageUrl}}">
+  <p class="name">{{name}}</p>
+  <p><span>Difficulty level:</span> {{level}}</p>
+  <a class="btn" href="/details/{{id}}">Details</a>
+</div>
+
+{{else}}
+
+<h1 style="text-align: center;">No cubes , you can add one </h1>
+{{/each}}
