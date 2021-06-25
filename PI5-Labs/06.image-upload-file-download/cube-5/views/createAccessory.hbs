@@ -1,0 +1,21 @@
+<h1>Create Accessory</h1>
+<div class="form">
+  <form action='/create/accessory' method="POST" enctype="multipart/form-data">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name">
+    <label for="name">Description</label>
+    <textarea id="name" name="description"></textarea>
+    <input type="file" name="imageUrl" id="imageUrl" style="display: none;">
+    <div class="text-center">
+      <button class="btn" type="button" id="image-btn"> Add Image</button>
+    </div>
+    <input type="submit" value="Create">
+  </form>
+</div>
+
+<script>
+  document.getElementById('image-btn').addEventListener('click', () => {
+
+    document.getElementById('imageUrl').click()
+  })
+</script>
