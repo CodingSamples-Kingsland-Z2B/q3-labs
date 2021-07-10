@@ -1,0 +1,12 @@
+.AddForm {
+  margin-top: 2rem;
+}
+
+
+.AddForm .input-field{
+  width:100%
+}
+
+.btn{
+  margin-top: 1rem !important;
+}
