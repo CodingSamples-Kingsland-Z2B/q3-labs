@@ -1,0 +1,22 @@
+/* App Styles*/
+
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Indie- Flower', cursive;
+}
+
+.App {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.Container {
+    margin-top: 8.5%;
+    padding: 0.5%;
+    /* border: 1px solid purple; */
+    margin-bottom: 0.1%;
+}
+
+/* App Styles*/
