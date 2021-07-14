@@ -1,0 +1,27 @@
+.Profile {
+  width: 83%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0.5%;
+}
+.Profile img {
+  max-width: 265px;
+  margin: 0 auto;
+  display: block;
+}
+.Profile .personal-info {
+  vertical-align: top;
+  padding: 10px;
+  margin: 0 auto;
+  color: #234465;
+  width: 50%;
+  text-align: center;
+}
+.Profile p {
+  text-decoration: underline;
+  margin-bottom: 1%;
+}
+.Profile h2 {
+  color: #234465;
+  text-decoration: underline;
+}

@@ -1,0 +1,8 @@
+.Aside {
+  display: inline-block;
+  width: 15%;
+  margin-right: 1%;
+  height: 89.5vh;
+  /* border:1px solid red; */
+  vertical-align: top;
+}
