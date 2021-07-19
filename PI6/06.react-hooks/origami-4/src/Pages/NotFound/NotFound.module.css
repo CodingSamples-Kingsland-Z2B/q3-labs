@@ -1,0 +1,10 @@
+.FourOFour {
+  width: 83%;
+  display: inline-block;
+  vertical-align: top;
+}
+.FourOFour img {
+  width: 250px;
+  margin: 0 auto;
+  display: block;
+}
