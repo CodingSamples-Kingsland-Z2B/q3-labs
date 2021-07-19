@@ -1,0 +1,66 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+form{
+  max-width: 900px;
+  margin: 2rem auto;
+  background-color: #eee;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+  padding:1rem;
+}
+
+
+.form-control{
+  width:100%;
+  padding:0.5rem;
+}
+
+.form-control label{
+
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.form-control input{
+  width: 100%;
+  height: 35px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.form-control button{
+  padding:1rem;
+  background-color: dodgerblue;
+  border:none;
+  outline: none;
+  color:white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.invalid input{
+
+  border: 1px solid red;
+
+}
+
+.invalid label{
+  color:red;
+}
+
+.invalid p{
+  margin-top: 0.3rem;
+  font-size: 12px;
+  color:red;
+}
